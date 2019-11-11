@@ -94,6 +94,33 @@ Page {
                     title: "Categorieën"
                 }
 
+                // Algemeen
+                ListItem {
+                    contentHeight: Theme.itemSizeExtraSmall
+
+                    Label {
+                        anchors {
+                            left: parent.left
+                            leftMargin: Theme.paddingLarge
+                            verticalCenter: parent.verticalCenter
+                        }
+
+                        text: "Algemeen"
+                        font.pixelSize: Theme.fontSizeMedium
+                        wrapMode: Text.WordWrap
+                        truncationMode: TruncationMode.Fade
+                    }
+
+                    onClicked: {
+                        // load new feed
+                        feedListModel.source = "https://feeds.feedburner.com/nosjournaal"
+                        feedListModel.reload
+
+                        // go back to previous page
+                        pageStack.navigateBack()
+                    }
+                }
+
                 // Binnenland
                 ListItem {
                     contentHeight: Theme.itemSizeExtraSmall
