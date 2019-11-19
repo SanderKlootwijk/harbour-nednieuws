@@ -24,7 +24,7 @@ ListItem {
             height: parent.height
             anchors {
                 top: parent.top
-                right: parent.right
+                left: parent.left
             }
 
             source: image
@@ -34,7 +34,8 @@ ListItem {
             id: containerTitle
             width: parent.width - containerImage.width - Theme.paddingLarge
             anchors {
-                left: parent.left
+                left: containerImage.right
+                leftMargin: Theme.paddingLarge
             }
 
             text: title
@@ -48,7 +49,7 @@ ListItem {
         //Workaround: add extra return and > sign to sport articles, as they don't exist in some feeds
         if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -58,7 +59,7 @@ ListItem {
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwspolitiek") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -68,7 +69,7 @@ ListItem {
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwseconomie") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -78,7 +79,7 @@ ListItem {
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -88,7 +89,7 @@ ListItem {
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -98,7 +99,7 @@ ListItem {
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -108,7 +109,7 @@ ListItem {
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
@@ -118,7 +119,7 @@ ListItem {
         }
         else {
             //first scroll to top
-            columnFlickable.scrollToTop()
+            columnFlickable.contentY = 0
             //then add new information
             articleTitle.text = title
             articleDate.text = pubDate
