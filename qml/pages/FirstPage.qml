@@ -72,6 +72,9 @@ Page {
                     feedListModel.source = "https://feeds.feedburner.com/nosjournaal"
                     feedListModel.reload
 
+                    // scroll to top
+                    listView.scrollToTop()
+
                     // go back to previous page
                     pageStack.push(mainPage)
                 }
@@ -98,6 +101,9 @@ Page {
                     // load new feed
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwsbinnenland"
                     feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
 
                     // go back to previous page
                     pageStack.push(mainPage)
@@ -126,6 +132,9 @@ Page {
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwsbuitenland"
                     feedListModel.reload
 
+                    // scroll to top
+                    listView.scrollToTop()
+
                     // go back to previous page
                     pageStack.push(mainPage)
                 }
@@ -152,6 +161,9 @@ Page {
                     // load new feed
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwspolitiek"
                     feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
 
                     // go back to previous page
                     pageStack.push(mainPage)
@@ -180,6 +192,9 @@ Page {
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwseconomie"
                     feedListModel.reload
 
+                    // scroll to top
+                    listView.scrollToTop()
+
                     // go back to previous page
                     pageStack.push(mainPage)
                 }
@@ -206,6 +221,9 @@ Page {
                     // load new feed
                     feedListModel.source = "https://feeds.feedburner.com/nossportalgemeen"
                     feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
 
                     // go back to previous page
                     pageStack.push(mainPage)
@@ -234,6 +252,9 @@ Page {
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwskoningshuis"
                     feedListModel.reload
 
+                    // scroll to top
+                    listView.scrollToTop()
+
                     // go back to previous page
                     pageStack.push(mainPage)
                 }
@@ -260,6 +281,9 @@ Page {
                     // load new feed
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwstech"
                     feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
 
                     // go back to previous page
                     pageStack.push(mainPage)
@@ -288,6 +312,9 @@ Page {
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwscultuurenmedia"
                     feedListModel.reload
 
+                    // scroll to top
+                    listView.scrollToTop()
+
                     // go back to previous page
                     pageStack.push(mainPage)
                 }
@@ -315,6 +342,9 @@ Page {
                     feedListModel.source = "https://feeds.feedburner.com/nosnieuwsopmerkelijk"
                     feedListModel.reload
 
+                    // scroll to top
+                    listView.scrollToTop()
+
                     // go back to previous page
                     pageStack.push(mainPage)
                 }
@@ -341,6 +371,9 @@ Page {
                     // load new feed
                     feedListModel.source = "https://feeds.feedburner.com/nosop3"
                     feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
 
                     // go back to previous page
                     pageStack.push(mainPage)
