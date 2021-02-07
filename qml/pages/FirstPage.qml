@@ -384,7 +384,6 @@ Page {
 
     Page {
         id: mainPage
-        visible: false
 
         SilicaListView {
             id: listView
