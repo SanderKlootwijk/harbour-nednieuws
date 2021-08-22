@@ -33,6 +33,7 @@ ListItem {
         Label {
             id: containerTitle
             width: parent.width - containerImage.width - Theme.paddingLarge
+            height: parent.height
             anchors {
                 left: containerImage.right
                 leftMargin: Theme.paddingLarge
@@ -108,6 +109,56 @@ ListItem {
             pageStack.push(articlePage)
         }
         else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
+            //first scroll to top
+            columnFlickable.contentY = 0
+            //then add new information
+            articleTitle.text = title
+            articleDate.text = pubDate
+            articleImage.source = image
+            articleContent.text = content + '<br>&nbsp;&nbsp;> <a href="' + link + '"><font color="' + Theme.highlightColor + '">Open dit artikel in uw browser</font></a>'
+            pageStack.push(articlePage)
+        }
+        else if (feedListModel.source == "http://feeds.nos.nl/nosvoetbal") {
+            //first scroll to top
+            columnFlickable.contentY = 0
+            //then add new information
+            articleTitle.text = title
+            articleDate.text = pubDate
+            articleImage.source = image
+            articleContent.text = content + '<br>&nbsp;&nbsp;> <a href="' + link + '"><font color="' + Theme.highlightColor + '">Open dit artikel in uw browser</font></a>'
+            pageStack.push(articlePage)
+        }
+        else if (feedListModel.source == "http://feeds.nos.nl/nossportformule1") {
+            //first scroll to top
+            columnFlickable.contentY = 0
+            //then add new information
+            articleTitle.text = title
+            articleDate.text = pubDate
+            articleImage.source = image
+            articleContent.text = content + '<br>&nbsp;&nbsp;> <a href="' + link + '"><font color="' + Theme.highlightColor + '">Open dit artikel in uw browser</font></a>'
+            pageStack.push(articlePage)
+        }
+        else if (feedListModel.source == "http://feeds.nos.nl/nossportwielrennen") {
+            //first scroll to top
+            columnFlickable.contentY = 0
+            //then add new information
+            articleTitle.text = title
+            articleDate.text = pubDate
+            articleImage.source = image
+            articleContent.text = content + '<br>&nbsp;&nbsp;> <a href="' + link + '"><font color="' + Theme.highlightColor + '">Open dit artikel in uw browser</font></a>'
+            pageStack.push(articlePage)
+        }
+        else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstech") {
+            //first scroll to top
+            columnFlickable.contentY = 0
+            //then add new information
+            articleTitle.text = title
+            articleDate.text = pubDate
+            articleImage.source = image
+            articleContent.text = content + '<br>&nbsp;&nbsp;> <a href="' + link + '"><font color="' + Theme.highlightColor + '">Open dit artikel in uw browser</font></a>'
+            pageStack.push(articlePage)
+        }
+        else if (feedListModel.source == "http://feeds.nos.nl/nieuwsuuralgemeen") {
             //first scroll to top
             columnFlickable.contentY = 0
             //then add new information

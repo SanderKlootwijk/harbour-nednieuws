@@ -575,9 +575,6 @@ Page {
                     if (feedListModel.source == "https://feeds.feedburner.com/nosjournaal") {
                         "Algemeen nieuws"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
-                        "Sportnieuws"
-                    }
                     else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsbinnenland") {
                         "Binnenland"
                     }
@@ -590,20 +587,41 @@ Page {
                     else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwseconomie") {
                         "Economie"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
-                        "Opmerkelijk"
+                    else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
+                        "Sportnieuws"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosvoetbal") {
+                        "Voetbal"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nossportformule1") {
+                        "Formule 1"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nossportwielrennen") {
+                        "Wielrennen"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nossportschaatsen") {
+                        "Schaatsen"
                     }
                     else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwskoningshuis") {
                         "Koningshuis"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
-                        "Cultuur & Media"
-                    }
                     else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
                         "Technologie"
                     }
+                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
+                        "Cultuur & Media"
+                    }
+                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
+                        "Opmerkelijk"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nieuwsuuralgemeen") {
+                        "Nieuwsuur"
+                    }
                     else if (feedListModel.source == "https://feeds.feedburner.com/nosop3") {
                         "NOS op 3"
+                    }
+                    else if (feedListModel.source == "https://feeds.feedburner.com/jeugdjournaal") {
+                        "Jeugdjournaal"
                     }
                 }
             }
