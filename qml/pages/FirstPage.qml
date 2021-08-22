@@ -230,6 +230,126 @@ Page {
                 }
             }
 
+            // Voetbal
+            ListItem {
+                contentHeight: Theme.itemSizeExtraSmall
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        leftMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    text: "Voetbal"
+                    font.pixelSize: Theme.fontSizeMedium
+                    wrapMode: Text.WordWrap
+                    truncationMode: TruncationMode.Fade
+                }
+
+                onClicked: {
+                    // load new feed
+                    feedListModel.source = "http://feeds.nos.nl/nosvoetbal"
+                    feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
+
+                    // go back to previous page
+                    pageStack.push(mainPage)
+                }
+            }
+
+            // Formule1
+            ListItem {
+                contentHeight: Theme.itemSizeExtraSmall
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        leftMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    text: "Formule 1"
+                    font.pixelSize: Theme.fontSizeMedium
+                    wrapMode: Text.WordWrap
+                    truncationMode: TruncationMode.Fade
+                }
+
+                onClicked: {
+                    // load new feed
+                    feedListModel.source = "http://feeds.nos.nl/nossportformule1"
+                    feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
+
+                    // go back to previous page
+                    pageStack.push(mainPage)
+                }
+            }
+
+            // Wielrennen
+            ListItem {
+                contentHeight: Theme.itemSizeExtraSmall
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        leftMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    text: "Wielrennen"
+                    font.pixelSize: Theme.fontSizeMedium
+                    wrapMode: Text.WordWrap
+                    truncationMode: TruncationMode.Fade
+                }
+
+                onClicked: {
+                    // load new feed
+                    feedListModel.source = "http://feeds.nos.nl/nossportwielrennen"
+                    feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
+
+                    // go back to previous page
+                    pageStack.push(mainPage)
+                }
+            }
+
+            // Schaatsen
+            ListItem {
+                contentHeight: Theme.itemSizeExtraSmall
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        leftMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    text: "Schaatsen"
+                    font.pixelSize: Theme.fontSizeMedium
+                    wrapMode: Text.WordWrap
+                    truncationMode: TruncationMode.Fade
+                }
+
+                onClicked: {
+                    // load new feed
+                    feedListModel.source = "http://feeds.nos.nl/nossportschaatsen"
+                    feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
+
+                    // go back to previous page
+                    pageStack.push(mainPage)
+                }
+            }
+
             // Koningshuis
             ListItem {
                 contentHeight: Theme.itemSizeExtraSmall
@@ -350,6 +470,36 @@ Page {
                 }
             }
 
+            // Nieuwsuur
+            ListItem {
+                contentHeight: Theme.itemSizeExtraSmall
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        leftMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    text: "Nieuwsuur"
+                    font.pixelSize: Theme.fontSizeMedium
+                    wrapMode: Text.WordWrap
+                    truncationMode: TruncationMode.Fade
+                }
+
+                onClicked: {
+                    // load new feed
+                    feedListModel.source = "http://feeds.nos.nl/nieuwsuuralgemeen"
+                    feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
+
+                    // go back to previous page
+                    pageStack.push(mainPage)
+                }
+            }
+
             // NOS op 3
             ListItem {
                 contentHeight: Theme.itemSizeExtraSmall
@@ -370,6 +520,36 @@ Page {
                 onClicked: {
                     // load new feed
                     feedListModel.source = "https://feeds.feedburner.com/nosop3"
+                    feedListModel.reload
+
+                    // scroll to top
+                    listView.scrollToTop()
+
+                    // go back to previous page
+                    pageStack.push(mainPage)
+                }
+            }
+
+            // Jeugdjournaal
+            ListItem {
+                contentHeight: Theme.itemSizeExtraSmall
+
+                Label {
+                    anchors {
+                        left: parent.left
+                        leftMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
+
+                    text: "Jeugdjournaal"
+                    font.pixelSize: Theme.fontSizeMedium
+                    wrapMode: Text.WordWrap
+                    truncationMode: TruncationMode.Fade
+                }
+
+                onClicked: {
+                    // load new feed
+                    feedListModel.source = "https://feeds.feedburner.com/jeugdjournaal"
                     feedListModel.reload
 
                     // scroll to top
