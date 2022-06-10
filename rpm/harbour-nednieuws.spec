@@ -10,7 +10,7 @@ Name:       harbour-nednieuws
 
 Summary:    NedNieuws
 Version:    1.2.2
-Release:    1
+Release:    2
 Group:      Qt/Qt
 License:    LICENSE
 BuildArch:  noarch

@@ -575,14 +575,7 @@ Page {
                     if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsalgemeen") {
                         "Algemeen nieuws"
                     }
-<<<<<<< Updated upstream
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsbinnenland") {
-=======
-                    else if (feedListModel.source == "http://feeds.nos.nl/nossportalgemeen") {
-                        "Sportnieuws"
-                    }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsbinnenland") {
->>>>>>> Stashed changes
                         "Binnenland"
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsbuitenland") {
@@ -594,8 +587,7 @@ Page {
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwseconomie") {
                         "Economie"
                     }
-<<<<<<< Updated upstream
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nossportalgemeen") {
                         "Sportnieuws"
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosvoetbal") {
@@ -609,38 +601,26 @@ Page {
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nossportschaatsen") {
                         "Schaatsen"
-=======
+                    }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsopmerkelijk") {
                         "Opmerkelijk"
->>>>>>> Stashed changes
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwskoningshuis") {
                         "Koningshuis"
                     }
-<<<<<<< Updated upstream
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
-                        "Technologie"
-                    }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
-                        "Cultuur & Media"
-                    }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
-                        "Opmerkelijk"
-                    }
                     else if (feedListModel.source == "http://feeds.nos.nl/nieuwsuuralgemeen") {
                         "Nieuwsuur"
-=======
+                    }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwscultuurenmedia") {
                         "Cultuur & Media"
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwstechnologie") {
                         "Technologie"
->>>>>>> Stashed changes
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosop3") {
                         "NOS op 3"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/jeugdjournaal") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/jeugdjournaal") {
                         "Jeugdjournaal"
                     }
                 }
