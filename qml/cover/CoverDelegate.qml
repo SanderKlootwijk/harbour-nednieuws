@@ -29,37 +29,37 @@ ListItem {
             color: Theme.highlightColor
 
             text: {
-                if (feedListModel.source == "https://feeds.feedburner.com/nosjournaal") {
+                if (feedListModel.source === "https://feeds.feedburner.com/nosjournaal") {
                     "Algemeen nieuws"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nossportalgemeen") {
                     "Sportnieuws"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsbinnenland") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwsbinnenland") {
                     "Binnenland"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsbuitenland") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwsbuitenland") {
                     "Buitenland"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwspolitiek") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwspolitiek") {
                     "Politiek"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwseconomie") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwseconomie") {
                     "Economie"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
                     "Opmerkelijk"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwskoningshuis") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwskoningshuis") {
                     "Koningshuis"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
                     "Cultuur & Media"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosnieuwstechnologie") {
                     "Technologie"
                 }
-                else if (feedListModel.source == "https://feeds.feedburner.com/nosop3") {
+                else if (feedListModel.source === "https://feeds.feedburner.com/nosop3") {
                     "NOS op 3"
                 }
             }

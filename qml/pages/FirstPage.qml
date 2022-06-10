@@ -69,7 +69,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosjournaal"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwsalgemeen"
                     feedListModel.reload
 
                     // scroll to top
@@ -99,7 +99,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwsbinnenland"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwsbinnenland"
                     feedListModel.reload
 
                     // scroll to top
@@ -129,7 +129,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwsbuitenland"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwsbuitenland"
                     feedListModel.reload
 
                     // scroll to top
@@ -159,7 +159,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwspolitiek"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwspolitiek"
                     feedListModel.reload
 
                     // scroll to top
@@ -189,7 +189,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwseconomie"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwseconomie"
                     feedListModel.reload
 
                     // scroll to top
@@ -219,7 +219,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nossportalgemeen"
+                    feedListModel.source = "http://feeds.nos.nl/nossportalgemeen"
                     feedListModel.reload
 
                     // scroll to top
@@ -369,7 +369,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwskoningshuis"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwskoningshuis"
                     feedListModel.reload
 
                     // scroll to top
@@ -399,7 +399,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwstech"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwstech"
                     feedListModel.reload
 
                     // scroll to top
@@ -429,7 +429,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwscultuurenmedia"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwscultuurenmedia"
                     feedListModel.reload
 
                     // scroll to top
@@ -459,7 +459,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosnieuwsopmerkelijk"
+                    feedListModel.source = "http://feeds.nos.nl/nosnieuwsopmerkelijk"
                     feedListModel.reload
 
                     // scroll to top
@@ -519,7 +519,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/nosop3"
+                    feedListModel.source = "http://feeds.nos.nl/nosop3"
                     feedListModel.reload
 
                     // scroll to top
@@ -549,7 +549,7 @@ Page {
 
                 onClicked: {
                     // load new feed
-                    feedListModel.source = "https://feeds.feedburner.com/jeugdjournaal"
+                    feedListModel.source = "http://feeds.nos.nl/jeugdjournaal"
                     feedListModel.reload
 
                     // scroll to top
@@ -572,22 +572,22 @@ Page {
                 id: pageHeader
                 // Adjust page title to current feed
                 title: {
-                    if (feedListModel.source == "https://feeds.feedburner.com/nosjournaal") {
+                    if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsalgemeen") {
                         "Algemeen nieuws"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsbinnenland") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsbinnenland") {
                         "Binnenland"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsbuitenland") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsbuitenland") {
                         "Buitenland"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwspolitiek") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwspolitiek") {
                         "Politiek"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwseconomie") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwseconomie") {
                         "Economie"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nossportalgemeen") {
                         "Sportnieuws"
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nosvoetbal") {
@@ -602,25 +602,25 @@ Page {
                     else if (feedListModel.source == "http://feeds.nos.nl/nossportschaatsen") {
                         "Schaatsen"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwskoningshuis") {
-                        "Koningshuis"
-                    }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwstechnologie") {
-                        "Technologie"
-                    }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwscultuurenmedia") {
-                        "Cultuur & Media"
-                    }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosnieuwsopmerkelijk") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwsopmerkelijk") {
                         "Opmerkelijk"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwskoningshuis") {
+                        "Koningshuis"
                     }
                     else if (feedListModel.source == "http://feeds.nos.nl/nieuwsuuralgemeen") {
                         "Nieuwsuur"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/nosop3") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwscultuurenmedia") {
+                        "Cultuur & Media"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosnieuwstechnologie") {
+                        "Technologie"
+                    }
+                    else if (feedListModel.source == "http://feeds.nos.nl/nosop3") {
                         "NOS op 3"
                     }
-                    else if (feedListModel.source == "https://feeds.feedburner.com/jeugdjournaal") {
+                    else if (feedListModel.source == "http://feeds.nos.nl/jeugdjournaal") {
                         "Jeugdjournaal"
                     }
                 }
