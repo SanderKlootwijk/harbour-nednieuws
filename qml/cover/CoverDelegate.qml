@@ -29,7 +29,10 @@ ListItem {
             color: Theme.highlightColor
 
             text: {
-                if (feedListModel.source == "https://feeds.feedburner.com/nosjournaal") {
+                if (feedListModel.source == "https://www.nu.nl/rss/Algemeen") {
+                    "NU.nl - Algemeen"
+                }
+                else if (feedListModel.source == "https://feeds.feedburner.com/nosjournaal") {
                     "Algemeen nieuws"
                 }
                 else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
@@ -67,8 +70,8 @@ ListItem {
 
         Image {
             id: containerImage
-            width: parent.width
-            height: width / 1.7
+            height: parent.width / 1.7
+            width: (generic.imageFactor == 1.0) ? height : parent.width
             anchors {
                 top: categoryLabel.bottom
                 topMargin: Theme.paddingMedium

@@ -20,7 +20,7 @@ ListItem {
 
         Image {
             id: containerImage
-            width: height * 1.7
+            width: height * generic.imageFactor
             height: parent.height
             anchors {
                 top: parent.top

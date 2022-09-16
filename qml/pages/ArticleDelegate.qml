@@ -20,7 +20,7 @@ ListItem {
 
         Image {
             id: containerImage
-            width: height * 1.7
+            width: height * generic.imageFactor
             height: parent.height
             anchors {
                 top: parent.top
@@ -48,7 +48,17 @@ ListItem {
 
     onClicked: {
         //Workaround: add extra return and > sign to sport articles, as they don't exist in some feeds
-        if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
+        if (feedListModel.source == "https://www.nu.nl/rss/Algemeen") {
+            //first scroll to top
+            columnFlickable.contentY = 0
+            //then add new information
+            articleTitle.text = title
+            articleDate.text = pubDate
+            articleImage.source = image
+            articleContent.text = content + '<br>&nbsp;&nbsp;> <a href="' + link + '"><font color="' + Theme.highlightColor + '">Open dit artikel in uw browser</font></a>'
+            pageStack.push(articlePage)
+        }
+        else if (feedListModel.source == "https://feeds.feedburner.com/nossportalgemeen") {
             //first scroll to top
             columnFlickable.contentY = 0
             //then add new information

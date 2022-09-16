@@ -5,13 +5,17 @@ import "pages"
 
 ApplicationWindow
 {
+    id: generic
+
+    property real imageFactor : 1.0
+
     initialPage: Component { FirstPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
 
     XmlListModel {
         id: feedListModel
-        source: "https://feeds.feedburner.com/nosjournaal"
+        source: "https://www.nu.nl/rss/Algemeen"
         query: "/rss/channel/item"
 
         namespaceDeclarations: "declare namespace dc='http://purl.org/dc/elements/1.1/'; declare namespace content='http://purl.org/rss/1.0/modules/content/';"
